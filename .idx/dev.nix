@@ -4,8 +4,6 @@
   packages = [
     pkgs.flutter
     pkgs.git
-    pkgs.androidsdk
-    # etc
   ];
   services = {};
   idx = {

@@ -1,32 +1,17 @@
-{ pkgs, include_firestore ? true, auth_type ? "email", ... }:
-{
-  packages = [
-    pkgs.flutter
-    pkgs.git
-  ];
-
+# No user-configurable parameters
+{ pkgs, ... }: {
+  # Shell script that produces the final environment
   bootstrap = ''
-    mkdir -p "$out"
-    # scaffold flutter project
-    flutter create "$out/my_app"
-    
-    # navigate
-    cd "$out/my_app"
-    
-    # Add firebase packages
-    flutter pub add firebase_core firebase_auth
-    ${ if include_firestore then "flutter pub add cloud_firestore" else "" }
-    
-    # Optionally scaffold Google Sign-In if auth_type == "google"
-    ${ if auth_type == "google" then
-         "flutter pub add google_sign_in; # plus setup code"
-       else
-         ""
-    }
+    # Copy the folder containing the `idx-template` files to the final
+    # project folder for the new workspace. ${./.} inserts the directory
+    # of the checked-out Git folder containing this template.
+    cp -rf ${./.} "$out"
 
-    # Copy template files if you have any
-    cp -R ${./starter_files} "$out/my_app/lib/"
-
+    # Set some permissions
     chmod -R +w "$out"
+
+    # Remove the template files themselves and any connection to the template's
+    # Git repository
+    rm -rf "$out/.git" "$out/idx-template".{nix,json}
   '';
 }

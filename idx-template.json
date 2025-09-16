@@ -1,25 +1,6 @@
 {
-    "name": "Flutter + Firebase Starter",
-    "description": "A template for Flutter apps with Firebase Auth & Firestore setup",
-    "icon": "https://yourdomain.com/icon-flutter-firebase.svg",
-    "params": [
-        {
-            "id": "include_firestore",
-            "name": "Include Firestore",
-            "type": "boolean",
-            "default": true,
-            "required": false
-        },
-        {
-            "id": "auth_type",
-            "name": "Auth Method",
-            "type": "enum",
-            "default": "email",
-            "options": {
-                "email": "Email & Password",
-                "google": "Google Sign-In"
-            },
-            "required": true
-        }
-    ]
+    "name": "Hello world",
+    "description": "A template for a CLI program that prints 'hello world'",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/creativestitchingclass-6efdc.appspot.com/o/videos%2Flink-svgrepo-com.svg?alt=media&token=c639531d-0732-4c02-8ade-80f2adf964ff",
+    "params": []
 }
