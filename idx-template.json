@@ -1,6 +1,31 @@
 {
-    "name": "Hello world",
-    "description": "A template for a CLI program that prints 'hello world'",
-    "icon": "https://firebasestorage.googleapis.com/v0/b/creativestitchingclass-6efdc.appspot.com/o/videos%2Flink-svgrepo-com.svg?alt=media&token=c639531d-0732-4c02-8ade-80f2adf964ff",
-    "params": []
+    "name": "Flutter",
+    "description": "Flutter create template",
+    "categories": [
+        "Mobile"
+    ],
+    "icon": "https://www.gstatic.com/images/branding/productlogos/flutter/v6/192px.svg",
+    "publisher": "Farhan",
+    "params": [
+        {
+            "id": "template",
+            "name": "Template",
+            "type": "enum",
+            "default": "app",
+            "options": {
+                "app": "App",
+                "module": "Module",
+                "package": "Package",
+                "plugin": "Plugin",
+                "plugin_ffi": "Plugin (FFI)",
+                "skeleton": "Skeleton"
+            }
+        },
+        {
+            "id": "platforms",
+            "name": "Platforms",
+            "type": "text",
+            "default": "web,android"
+        }
+    ]
 }
