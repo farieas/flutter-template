@@ -6,6 +6,9 @@
     ],
     "icon": "https://www.gstatic.com/images/branding/productlogos/flutter/v6/192px.svg",
     "publisher": "Farhan",
+    "host": {
+        "virtualization": "true"
+    },
     "params": [
         {
             "id": "template",
