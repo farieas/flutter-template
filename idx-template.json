@@ -2,6 +2,7 @@
   "name": "Flutter Template",
   "description": "A Flutter template with customizable options for rapid prototyping and development",
   "icon": "https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png",
+  "version": "1.0.0",
   "params": [
     {
       "id": "project_name",
@@ -32,7 +33,7 @@
         "orange": "Orange",
         "red": "Red"
       },
-      "required": false
+      "required": true
     },
     {
       "id": "include_state_management",
@@ -46,7 +47,7 @@
         "riverpod": "Riverpod", 
         "bloc": "Bloc"
       },
-      "required": false
+      "required": true
     }
   ]
 }
