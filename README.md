@@ -56,8 +56,9 @@ https://idx.google.com/new?template=https://github.com/your-username/your-repo-n
 Add an "Open in Firebase Studio" button to your project:
 
 ```markdown
-[![Open in Firebase Studio](https://img.shields.io/badge/Open%20in-Firebase%20Studio-blue?logo=firebase)](https://idx.google.com/new?template=https://github.com/your-username/your-repo-name)
+[![Open in Firebase Studio](https://img.shields.io/badge/Open%20in-Firebase%20Studio-blue?logo=firebase)](https://idx.google.com/new?template=https://github.com/farieas/flutter-firebase-studio-template.git)
 ```
+
 
 ## What Gets Created
 
