@@ -8,17 +8,14 @@
     "publisher": "Farhan",
     "params": [
         {
-            "id": "template",
-            "name": "Template",
+            "id": "statemanagement",
+            "name": "State Management",
             "type": "enum",
-            "default": "app",
+            "default": "none",
             "options": {
-                "app": "App",
-                "module": "Module",
-                "package": "Package",
-                "plugin": "Plugin",
-                "plugin_ffi": "Plugin (FFI)",
-                "skeleton": "Skeleton"
+                "none": "none",
+                "bloc": "bloc",
+                "riverpod": "riverpod"
             }
         },
         {

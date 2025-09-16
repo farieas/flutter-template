@@ -1,4 +1,4 @@
-{pkgs, template ? "app", platforms ? "web,android", ...}: {
+{pkgs, platforms ? "web,android", ...}: {
     packages = [
         pkgs.curl
         pkgs.gnutar
@@ -9,7 +9,7 @@
         pkgs.dart
     ];
     bootstrap = ''
-        flutter create "$out" --template="${template}" --platforms="${platforms}"
+        flutter create "$out" --platforms="${platforms}"
         mkdir "$out"/.idx
         cp ${./dev.nix} "$out"/.idx/dev.nix
         install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
