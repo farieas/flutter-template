@@ -1,52 +1,52 @@
 {
-    "name": "Flutter Template",
-    "description": "A Flutter template with customizable options for rapid prototyping and development",
-    "icon": "https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png",
-    "params": [
-        {
-            "id": "project_name",
-            "name": "Project Name",
-            "description": "The name of your Flutter project",
-            "type": "string",
-            "default": "my_flutter_app",
-            "required": true
-        },
-        {
-            "id": "include_firebase",
-            "name": "Include Firebase",
-            "description": "Add Firebase dependencies and basic setup",
-            "type": "boolean",
-            "default": false,
-            "required": false
-        },
-        {
-            "id": "theme_color",
-            "name": "Primary Theme Color",
-            "description": "Choose the primary color for your app theme",
-            "type": "enum",
-            "default": "blue",
-            "options": {
-                "blue": "Blue",
-                "purple": "Purple",
-                "green": "Green",
-                "orange": "Orange",
-                "red": "Red"
-            },
-            "required": false
-        },
-        {
-            "id": "include_state_management",
-            "name": "State Management",
-            "description": "Choose a state management solution",
-            "type": "enum",
-            "default": "none",
-            "options": {
-                "none": "None (Built-in setState)",
-                "provider": "Provider",
-                "riverpod": "Riverpod",
-                "bloc": "Bloc"
-            },
-            "required": false
-        }
-    ]
+  "name": "Flutter Template",
+  "description": "A Flutter template with customizable options for rapid prototyping and development",
+  "icon": "https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png",
+  "params": [
+    {
+      "id": "project_name",
+      "name": "Project Name",
+      "description": "The name of your Flutter project",
+      "type": "string",
+      "default": "my_flutter_app",
+      "required": true
+    },
+    {
+      "id": "include_firebase", 
+      "name": "Include Firebase",
+      "description": "Add Firebase dependencies and basic setup",
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    {
+      "id": "theme_color",
+      "name": "Primary Theme Color", 
+      "description": "Choose the primary color for your app theme",
+      "type": "enum",
+      "default": "blue",
+      "options": {
+        "blue": "Blue",
+        "purple": "Purple", 
+        "green": "Green",
+        "orange": "Orange",
+        "red": "Red"
+      },
+      "required": false
+    },
+    {
+      "id": "include_state_management",
+      "name": "State Management",
+      "description": "Choose a state management solution", 
+      "type": "enum",
+      "default": "none",
+      "options": {
+        "none": "None (Built-in setState)",
+        "provider": "Provider",
+        "riverpod": "Riverpod", 
+        "bloc": "Bloc"
+      },
+      "required": false
+    }
+  ]
 }
