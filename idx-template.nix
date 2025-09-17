@@ -16,7 +16,7 @@ packages = [
     echo "State Management: $STATE_MANAGEMENT"
 
     # Create Flutter project
-    flutter create --org "$ORG_NAME" --project-name "$PROJECT_NAME" .
+    flutter create PROJECT_NAME
 
     # Create basic directory structure
     mkdir -p lib/{screens,widgets,models,services}
