@@ -7,13 +7,17 @@
       "id": "projectName",
       "name": "Project Name",
       "type": "text",
-      "default": "flutter_app"
+      "default": "flutter_app",
+      "options" : {},
+      "required": true
     },
     {
       "id": "orgName",
       "name": "Organization Domain",
       "type": "text",
-      "default": "com.example"
+      "default": "com.example",
+      "options" : {},
+      "required": true
     },
     {
       "id": "stateManagement",
@@ -26,7 +30,8 @@
           "none": "None (setState)"
         }
       ,
-      "default": "none"
+      "default": "none",
+      "required": true
     }
   ]
 }
