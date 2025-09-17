@@ -40,18 +40,6 @@
       ,
       "default": "bloc",
       "required": true
-    },
-    {
-      "id": "platforms",
-      "name": "Platforms",
-      "type": "boolean",
-      "options": {
-          "web": "Web",
-          "ios": "iOS",
-          "andriod": "Andriod"
-        }
-      ,
-      "required": true
     }
   ]
 }
