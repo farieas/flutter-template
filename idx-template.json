@@ -1,7 +1,7 @@
 {
   "name": "Flutter State Management Starter",
   "description": "A Flutter template with configurable state management solutions.",
-  "icon": "https://storage.googleapis.com/idx-assets/icons/flutter.svg",
+  "icon": "https://www.gstatic.com/images/branding/productlogos/flutter/v6/192px.svg",
   "params": [
     {
       "id": "projectName",
