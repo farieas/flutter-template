@@ -4,14 +4,6 @@
   "icon": "https://www.gstatic.com/images/branding/productlogos/flutter/v6/192px.svg",
   "params": [
     {
-      "id": "projectName",
-      "name": "Project Name",
-      "type": "text",
-      "default": "flutter_app",
-      "options" : {},
-      "required": true
-    },
-    {
       "id": "orgName",
       "name": "Organization Domain",
       "type": "text",
