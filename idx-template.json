@@ -1,28 +1,47 @@
 {
-    "name": "Flutter",
-    "description": "Flutter create template",
-    "categories": [
-        "Mobile"
-    ],
-    "icon": "https://www.gstatic.com/images/branding/productlogos/flutter/v6/192px.svg",
-    "publisher": "Farhan",
-    "params": [
+  "name": "Flutter State Management Starter",
+  "description": "A Flutter template with configurable state management solutions.",
+  "icon": "https://storage.googleapis.com/idx-assets/icons/flutter.svg",
+  "params": [
+    {
+      "id": "projectName",
+      "name": "Project Name",
+      "type": "text",
+      "default": "flutter_app"
+    },
+    {
+      "id": "orgName",
+      "name": "Organization Domain",
+      "type": "text",
+      "default": "com.example"
+    },
+    {
+      "id": "stateManagement",
+      "name": "State Management",
+      "type": "enum",
+      "options": [
         {
-            "id": "statemanagement",
-            "name": "State Management",
-            "type": "enum",
-            "default": "none",
-            "options": {
-                "none": "none",
-                "bloc": "bloc",
-                "riverpod": "riverpod"
-            }
+          "label": "Provider",
+          "value": "provider"
         },
         {
-            "id": "platforms",
-            "name": "Platforms",
-            "type": "text",
-            "default": "web,android"
+          "label": "BLoC",
+          "value": "bloc"
+        },
+        {
+          "label": "Riverpod",
+          "value": "riverpod"
+        },
+        {
+          "label": "GetX",
+          "value": "getx"
+        },
+        {
+          "label": "None (setState)",
+          "value": "none"
         }
-    ]
+      ],
+      "default": "provider"
+    }
+  ]
 }
