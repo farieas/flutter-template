@@ -17,6 +17,32 @@
       "required": true
     },
     {
+      "id": "arch",
+      "name": "Arch",
+      "type": "enum",
+      "options": {
+          "mvvm": "MVVM",
+          "clean": "Clean",
+          "mvc" : "MVC"
+        }
+      ,
+      "default": "mvvm",
+      "required": true
+    },
+    {
+      "id": "arch",
+      "name": "Arch",
+      "type": "enum",
+      "options": {
+          "mvvm": "MVVM",
+          "clean": "Clean",
+          "mvc" : "MVC"
+        }
+      ,
+      "default": "mvvm",
+      "required": true
+    },
+    {
       "id": "stateManagement",
       "name": "State Management",
       "type": "enum",
