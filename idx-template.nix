@@ -1,11 +1,13 @@
 { pkgs, projectName, orgName, stateManagement, ... }: {
-
-packages = [
-  pkgs.flutter
-  pkgs.git
-  pkgs.curl
-];
-
+  packages = [
+        pkgs.curl
+        pkgs.gnutar
+        pkgs.xz
+        pkgs.git
+        pkgs.busybox
+        pkgs.flutter
+        pkgs.dart
+    ];
   bootstrap = ''
     # Get template parameters
     PROJECT_NAME="${projectName}"
