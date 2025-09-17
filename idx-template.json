@@ -7,7 +7,7 @@
       "id": "app",
       "name": "App Name", 
       "type": "text",
-      "default": "App name",
+     
       "required": true
     },
     {
