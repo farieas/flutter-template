@@ -8,9 +8,9 @@ packages = [
 
   bootstrap = ''
     # Get template parameters
-    PROJECT_NAME=projectName
-    ORG_NAME=orgName
-    STATE_MANAGEMENT=stateManagement
+    PROJECT_NAME="${projectName}"
+    ORG_NAME="${orgName}"
+    STATE_MANAGEMENT="${stateManagement}"
 
     echo "Creating Flutter project: $PROJECT_NAME"
     echo "State Management: $STATE_MANAGEMENT"
