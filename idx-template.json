@@ -19,28 +19,13 @@
       "id": "stateManagement",
       "name": "State Management",
       "type": "enum",
-      "options": [
-        {
-          "label": "Provider",
-          "value": "provider"
-        },
-        {
-          "label": "BLoC",
-          "value": "bloc"
-        },
-        {
-          "label": "Riverpod",
-          "value": "riverpod"
-        },
-        {
-          "label": "GetX",
-          "value": "getx"
-        },
-        {
-          "label": "None (setState)",
-          "value": "none"
+      "options": {
+          "provider": "Provider",
+          "bloc": "BLoC",
+          "riverpod": "Riverpod",
+          "none": "None (setState)"
         }
-      ],
+      ,
       "default": "provider"
     }
   ]
