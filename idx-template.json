@@ -23,7 +23,8 @@
       "type": "enum",
       "options": {
           "mvvm": "MVVM",
-          "clean": "Clean"
+          "clean": "Clean",
+          "mvc" : "MVC"
         }
       ,
       "default": "mvvm",
