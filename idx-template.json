@@ -4,7 +4,7 @@
   "icon": "https://www.gstatic.com/images/branding/productlogos/flutter/v6/192px.svg",
   "params": [
     {
-      "id": "projectName",
+      "id": "appName",
       "name": "App Name", 
       "type": "text",
       "default": "App name",
