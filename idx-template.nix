@@ -16,7 +16,11 @@ packages = [
     echo "State Management: $STATE_MANAGEMENT"
 
     # Create Flutter project
-    flutter create PROJECT_NAME
+    flutter create "$out"
+    mkdir "$out"/.idx
+    cp ${./dev.nix} "$out"/.idx/dev.nix
+    install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
+    chmod -R u+w "$out"
 
     # Create basic directory structure
     mkdir -p lib/{screens,widgets,models,services}
