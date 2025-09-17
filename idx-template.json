@@ -14,7 +14,7 @@
           "none": "None (setState)"
         }
       ,
-      "default": "none",
+      "default": "bloc",
       "required": true
     }
   ]
