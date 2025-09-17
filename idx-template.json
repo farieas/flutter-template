@@ -7,17 +7,21 @@
       "id": "projectName",
       "name": "App Name", 
       "type": "text",
-     
+      "required": true
+    },
+     {
+      "id": "orgName",
+      "name": "Organization Name", 
+      "type": "text",
       "required": true
     },
     {
-      "id": "arch",
-      "name": "Arch",
+      "id": "architecture",
+      "name": "Architecture",
       "type": "enum",
       "options": {
           "mvvm": "MVVM",
-          "clean": "Clean",
-          "mvc" : "MVC"
+          "clean": "Clean"
         }
       ,
       "default": "mvvm",
