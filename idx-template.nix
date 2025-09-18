@@ -19,11 +19,16 @@
     echo "State Management: $STATE_MANAGEMENT"
 
     # Create Flutter project
-    flutter create --project-name "$PROJECT_NAME" --org "$ORG_NAME" "$out"
+    #flutter create --project-name "$PROJECT_NAME" --org "$ORG_NAME" "$out"
+    flutter create "$out" \
+      --project-name="${PROJECT_NAME}" \
+      --org="${ORG_NAME}"
     mkdir "$out"/.idx
 
     # Create basic directory structure
-    mkdir "$out"/lib/{screens,widgets,models,services}
+    # mkdir "$out"/lib/{screens,widgets,models,services}
+
+
     cp ${./dev.nix} "$out"/.idx/dev.nix
     install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
 
