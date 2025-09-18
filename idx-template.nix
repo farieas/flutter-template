@@ -20,9 +20,7 @@
 
     # Create Flutter project
     #flutter create --project-name "$PROJECT_NAME" --org "$ORG_NAME" "$out"
-    flutter create "$out" \
-      --project-name="${PROJECT_NAME}" \
-      --org="${ORG_NAME}"
+    flutter create "$out" --org "$ORG_NAME" "$PROJECT_NAME"
     mkdir "$out"/.idx
 
     # Create basic directory structure
