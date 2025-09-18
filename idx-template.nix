@@ -26,8 +26,6 @@
 
     # Create basic directory structure
     mkdir "$out"/lib/{screens,widgets,models,services}
-    # Move into project directory
-    cd "$out"
 
     # Add Dependencies
     if [ "$STATE_MANAGEMENT" = "bloc" ]; then
