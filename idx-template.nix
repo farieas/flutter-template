@@ -20,20 +20,21 @@
     # Create Flutter project
     flutter create "$out"
     mkdir "$out"/.idx
+
+    # Create basic directory structure
     mkdir "$out"/lib/{screens,widgets,models,services}
     cp ${./dev.nix} "$out"/.idx/dev.nix
     install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
-    chmod -R u+w "$out"
 
-    # Create basic directory structure
-  
-
-    # Add Dependencies
+       # Add Dependencies
     if [ "$STATE_MANAGEMENT" = "bloc" ]; then
       echo "Adding bloc..."
+      flutter pub add flutter_bloc
     else
       echo "No State is adding"
     fi
+
+    chmod -R u+w "$out"
 
     echo ""
     echo "✅ Flutter template created successfully!"
