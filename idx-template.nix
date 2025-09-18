@@ -26,10 +26,10 @@
     cp ${./dev.nix} "$out"/.idx/dev.nix
     install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
 
-       # Add Dependencies
+    # Add Dependencies
     if [ "$STATE_MANAGEMENT" = "bloc" ]; then
       echo "Adding bloc..."
-     # flutter pub add flutter_bloc
+      flutter pub add flutter_bloc
     else
       echo "No State is adding"
     fi
