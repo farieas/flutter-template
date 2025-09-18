@@ -20,12 +20,13 @@
     # Create Flutter project
     flutter create "$out"
     mkdir "$out"/.idx
+    mkdir "$out"/lib/{screens,widgets,models,services}
     cp ${./dev.nix} "$out"/.idx/dev.nix
     install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
     chmod -R u+w "$out"
 
     # Create basic directory structure
-     mkdir "$out"/lib/{screens,widgets,models,services}
+    
 
     echo ""
     echo "✅ Flutter template created successfully!"
