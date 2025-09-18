@@ -13,27 +13,34 @@
     PROJECT_NAME="${projectName}"
     ORG_NAME="${orgName}"
     STATE_MANAGEMENT="${stateManagement}"
-    echo "out: $out"
+    
     echo "Creating Flutter project: $PROJECT_NAME"
     echo "State Management: $STATE_MANAGEMENT"
 
     # Create Flutter project
-    # flutter create --project-name "$PROJECT_NAME" --org "$ORG_NAME" "$out"
-    flutter create "$out" --project-name="$PROJECT_NAME" --org="$ORG_NAME" --sample="material.Scaffold.3"
-  
+    flutter create "$out" --project-name="$PROJECT_NAME" --org="$ORG_NAME"
+
+    # Create .idx directory
     mkdir "$out"/.idx
 
-    # Create basic directory structure
+    # Copy dev.nix file to .idx directory
+    cp ${./dev.nix} "$out"/.idx/dev.nix
+
+    # Create structure
     # mkdir "$out"/lib/{screens,widgets,models,services}
 
-
-    cp ${./dev.nix} "$out"/.idx/dev.nix
     install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
 
-       # Add Dependencies
+    # Add Dependencies
     if [ "$STATE_MANAGEMENT" = "bloc" ]; then
-    echo "Adding bloc..."
-       (cd "$out" && flutter pub add flutter_bloc)
+      echo "Adding bloc..."
+      (cd "$out" && flutter pub add flutter_bloc)
+    elif [ "$STATE_MANAGEMENT" = "provider" ]; then
+      echo "Adding provider..."
+      (cd "$out" && flutter pub add provider)
+    elif [ "$STATE_MANAGEMENT" = "riverpod" ]; then
+      echo "Adding riverpod..."
+      (cd "$out" && flutter pub add flutter_riverpod)
     else
       echo "No State is adding"
     fi
