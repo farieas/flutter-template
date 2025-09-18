@@ -29,7 +29,7 @@
        # Add Dependencies
     if [ "$STATE_MANAGEMENT" = "bloc" ]; then
       echo "Adding bloc..."
-      (cd "$out" && flutter pub add flutter_bloc)
+     # (cd "$out" && flutter pub add flutter_bloc)
     else
       echo "No State is adding"
     fi
