@@ -18,7 +18,7 @@
     echo "State Management: $STATE_MANAGEMENT"
 
     # Create Flutter project
-    flutter create "$out" --project-name "$PROJECT_NAME" --org "$ORG_NAME"
+    flutter create "$out"
     mkdir "$out"/.idx
 
     # Create basic directory structure
