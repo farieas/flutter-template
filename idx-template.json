@@ -5,13 +5,13 @@
   "params": [
     {
       "id": "projectName",
-      "name": "App Name", 
+      "name": "App Display Name",
       "type": "text",
       "required": true
     },
-     {
+    {
       "id": "orgName",
-      "name": "Organization Name", 
+      "name": "Organization Name",
       "type": "text",
       "required": true
     },
@@ -20,10 +20,9 @@
       "name": "Architecture",
       "type": "enum",
       "options": {
-          "mvvm": "MVVM",
-          "clean": "Clean"
-        }
-      ,
+        "mvvm": "MVVM",
+        "clean": "Clean"
+      },
       "default": "mvvm",
       "required": true
     },
@@ -32,12 +31,11 @@
       "name": "State Management",
       "type": "enum",
       "options": {
-          "provider": "Provider",
-          "bloc": "BLoC",
-          "riverpod": "Riverpod",
-          "none": "None (setState)"
-        }
-      ,
+        "provider": "Provider",
+        "bloc": "BLoC",
+        "riverpod": "Riverpod",
+        "none": "None (setState)"
+      },
       "default": "bloc",
       "required": true
     }
