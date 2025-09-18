@@ -19,7 +19,7 @@
 
     # Create Flutter project
     # flutter create --project-name "$PROJECT_NAME" --org "$ORG_NAME" "$out"
-    flutter create "$out" --project-name="${PROJECT_NAME}" --org="${ORG_NAME}" --sample="material.Scaffold.3"
+    flutter create "$out" --project-name="$PROJECT_NAME" --org="$ORG_NAME" --sample="material.Scaffold.3"
   
     mkdir "$out"/.idx
 
