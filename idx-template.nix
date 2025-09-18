@@ -14,6 +14,7 @@
     ORG_NAME="${orgName}"
     STATE_MANAGEMENT="${stateManagement}"
     echo "out: $out"
+    echo "workspace name: $WS_NAME"
     echo "Creating Flutter project: $PROJECT_NAME"
     echo "State Management: $STATE_MANAGEMENT"
 
@@ -28,8 +29,8 @@
 
        # Add Dependencies
     if [ "$STATE_MANAGEMENT" = "bloc" ]; then
-      echo "Adding bloc..."
-     # (cd "$out" && flutter pub add flutter_bloc)
+    echo "Adding bloc..."
+      # (cd "$out" && flutter pub add flutter_bloc)
     else
       echo "No State is adding"
     fi
