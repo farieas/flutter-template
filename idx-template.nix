@@ -25,7 +25,7 @@
     chmod -R u+w "$out"
 
     # Create basic directory structure
-    # mkdir -p lib/{screens,widgets,models,services}
+     mkdir -p lib/{screens,widgets,models,services}
 
     echo ""
     echo "✅ Flutter template created successfully!"
