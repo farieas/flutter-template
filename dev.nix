@@ -6,14 +6,14 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.nodePackages.firebase-tools
-    pkgs.jdk17
+    pkgs.jdk21
     pkgs.unzip
     pkgs.flutter
     pkgs.dart
   ];
   # Sets environment variables in the workspace
   env = {
-     PATH = ["/home/user/.pub-cache/bin"  "/home/user/flutter/bin" "./.flutter-sdk/flutter/bin"];
+    # PATH = ["/home/user/.pub-cache/bin"  "/home/user/flutter/bin" "./.flutter-sdk/flutter/bin"];
   };
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
