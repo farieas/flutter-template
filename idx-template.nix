@@ -32,18 +32,7 @@
     install --mode u+rw ${./dev.nix} "$out"/.idx/dev.nix
 
     # Add Dependencies
-    if [ "$STATE_MANAGEMENT" = "bloc" ]; then
-      echo "Adding bloc..."
-      (cd "$out" && flutter pub add flutter_bloc)
-    elif [ "$STATE_MANAGEMENT" = "provider" ]; then
-      echo "Adding provider..."
-      (cd "$out" && flutter pub add provider)
-    elif [ "$STATE_MANAGEMENT" = "riverpod" ]; then
-      echo "Adding riverpod..."
-      (cd "$out" && flutter pub add flutter_riverpod)
-    else
-      echo "No State is adding"
-    fi
+   
 
     chmod -R u+w "$out"
 
